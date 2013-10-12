@@ -12,14 +12,17 @@ GitHub: 	https://github.com/johnpaulcreates/php-core
 
 */
 
+#load the settings for the library
+require_once("settings.php");
 
 #load all the modules for the library
-require_once("email.php");
-require_once("data.php");
-require_once("datetime.php");
-require_once("debug.php");
-require_once("errors.php");
+require_once("helpers/email.php");
+require_once("helpers/data.php");
+require_once("helpers/datetime.php");
+require_once("helpers/debug.php");
+require_once("helpers/errors.php");
 require_once("helpers/strings.php");
-require_once("settings.php");
+
+require_once("classes/database/mysql.class.php");
 
 ?>
